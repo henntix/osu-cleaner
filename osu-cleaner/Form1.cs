@@ -222,7 +222,7 @@ namespace osu_cleaner
                 foreach (string file in Directory.GetFiles(d))
                 {
                     if (videoDeleteCheckbox.Checked)
-                        if (RegexMatch(file, "avi$") || RegexMatch(file, "flv$"))
+                        if (RegexMatch(file, "avi$") || RegexMatch(file, "flv$") || RegexMatch(file, "mp4$"))
                         {
                             foundElements.Add(file);
                             filesSize += getFileSize(file);
